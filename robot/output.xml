@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-18T13:12:40.596806" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="D:\Desenvolvimento\Projetos em Cake\avaliacao\robot\login.robot">
+<test id="s1-t1" name="Validar Login" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-18T13:12:41.013936" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8500/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-18T13:12:41.012936" elapsed="4.369541"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-18T13:12:45.384474" level="INFO">Typing text 'lucas1042@live.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-18T13:12:45.383474" elapsed="0.155120"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-18T13:12:45.539593" level="INFO">Typing text '1234' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-18T13:12:45.538594" elapsed="0.090574"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-18T13:12:45.629168" level="INFO">Clicking button 'css:.btn.btn-dark.w-100.mt-4.mb-3'.</msg>
+<arg>css:.btn.btn-dark.w-100.mt-4.mb-3</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-18T13:12:45.629168" elapsed="1.252878"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-09-18T13:12:46.889080" level="INFO">Page title is 'MyFinance'.</msg>
+<arg>MyFinance</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-09-18T13:12:46.882046" elapsed="0.007034"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-18T13:12:46.889080" elapsed="2.148859"/>
+</kw>
+<status status="PASS" start="2024-09-18T13:12:41.011907" elapsed="8.027393"/>
+</test>
+<test id="s1-t2" name="Invalidar Login" line="19">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-18T13:12:49.040306" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8500/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-18T13:12:49.040306" elapsed="2.140354"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-18T13:12:51.182658" level="INFO">Typing text 'lucas1042@live.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-18T13:12:51.181664" elapsed="0.171694"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-18T13:12:51.355361" level="INFO">Typing text '1234123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-18T13:12:51.354361" elapsed="0.130543"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-18T13:12:51.486907" level="INFO">Clicking button 'css:.btn.btn-dark.w-100.mt-4.mb-3'.</msg>
+<arg>css:.btn.btn-dark.w-100.mt-4.mb-3</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-18T13:12:51.485913" elapsed="0.587468"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-18T13:12:52.098819" level="INFO">Current page contains text 'E-mail ou senha incorretos! Por favor, tente novamente.'.</msg>
+<arg>E-mail ou senha incorretos! Por favor, tente novamente.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-18T13:12:52.073381" elapsed="0.025438"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-18T13:12:52.098819" elapsed="2.130598"/>
+</kw>
+<status status="PASS" start="2024-09-18T13:12:49.039300" elapsed="5.191116"/>
+</test>
+<status status="PASS" start="2024-09-18T13:12:40.598315" elapsed="13.634105"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,87 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-18T13:12:40.596806" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-26T08:35:50.841027" rpa="false" schemaversion="5">
 <suite id="s1" name="Login" source="D:\Desenvolvimento\Projetos em Cake\avaliacao\robot\login.robot">
 <test id="s1-t1" name="Validar Login" line="11">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-18T13:12:41.013936" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8500/login'.</msg>
+<msg time="2024-09-26T08:35:51.095611" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8500/login'.</msg>
+<msg time="2024-09-26T08:35:51.975794" level="WARN">The chromedriver version (128.0.6613.137) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.70); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-18T13:12:41.012936" elapsed="4.369541"/>
+<status status="PASS" start="2024-09-26T08:35:51.095611" elapsed="2.711297"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-18T13:12:45.384474" level="INFO">Typing text 'lucas1042@live.com' into text field 'id=email'.</msg>
+<msg time="2024-09-26T08:35:53.806908" level="INFO">Typing text 'lucas1042@live.com' into text field 'id=email'.</msg>
 <arg>id=email</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-18T13:12:45.383474" elapsed="0.155120"/>
+<status status="PASS" start="2024-09-26T08:35:53.806908" elapsed="0.133475"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-18T13:12:45.539593" level="INFO">Typing text '1234' into text field 'id=password'.</msg>
+<msg time="2024-09-26T08:35:53.940383" level="INFO">Typing text '1234' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-18T13:12:45.538594" elapsed="0.090574"/>
+<status status="PASS" start="2024-09-26T08:35:53.940383" elapsed="0.073037"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-18T13:12:45.629168" level="INFO">Clicking button 'css:.btn.btn-dark.w-100.mt-4.mb-3'.</msg>
+<msg time="2024-09-26T08:35:54.013420" level="INFO">Clicking button 'css:.btn.btn-dark.w-100.mt-4.mb-3'.</msg>
 <arg>css:.btn.btn-dark.w-100.mt-4.mb-3</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-18T13:12:45.629168" elapsed="1.252878"/>
+<status status="PASS" start="2024-09-26T08:35:54.013420" elapsed="0.961951"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-09-18T13:12:46.889080" level="INFO">Page title is 'MyFinance'.</msg>
+<msg time="2024-09-26T08:35:54.989417" level="INFO">Page title is 'MyFinance'.</msg>
 <arg>MyFinance</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-09-18T13:12:46.882046" elapsed="0.007034"/>
+<status status="PASS" start="2024-09-26T08:35:54.975371" elapsed="0.014046"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-18T13:12:46.889080" elapsed="2.148859"/>
+<status status="PASS" start="2024-09-26T08:35:54.989417" elapsed="2.106236"/>
 </kw>
-<status status="PASS" start="2024-09-18T13:12:41.011907" elapsed="8.027393"/>
+<status status="PASS" start="2024-09-26T08:35:51.095611" elapsed="6.000042"/>
 </test>
 <test id="s1-t2" name="Invalidar Login" line="19">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-18T13:12:49.040306" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8500/login'.</msg>
+<msg time="2024-09-26T08:35:57.095653" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8500/login'.</msg>
+<msg time="2024-09-26T08:35:57.367162" level="WARN">The chromedriver version (128.0.6613.137) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.70); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-18T13:12:49.040306" elapsed="2.140354"/>
+<status status="PASS" start="2024-09-26T08:35:57.095653" elapsed="1.905309"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-18T13:12:51.182658" level="INFO">Typing text 'lucas1042@live.com' into text field 'id=email'.</msg>
+<msg time="2024-09-26T08:35:59.001739" level="INFO">Typing text 'lucas1042@live.com' into text field 'id=email'.</msg>
 <arg>id=email</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-18T13:12:51.181664" elapsed="0.171694"/>
+<status status="PASS" start="2024-09-26T08:35:59.001739" elapsed="0.126567"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-18T13:12:51.355361" level="INFO">Typing text '1234123' into text field 'id=password'.</msg>
+<msg time="2024-09-26T08:35:59.128306" level="INFO">Typing text '1234123' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${PASSWORD}123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-18T13:12:51.354361" elapsed="0.130543"/>
+<status status="PASS" start="2024-09-26T08:35:59.128306" elapsed="0.081380"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-18T13:12:51.486907" level="INFO">Clicking button 'css:.btn.btn-dark.w-100.mt-4.mb-3'.</msg>
+<msg time="2024-09-26T08:35:59.209686" level="INFO">Clicking button 'css:.btn.btn-dark.w-100.mt-4.mb-3'.</msg>
 <arg>css:.btn.btn-dark.w-100.mt-4.mb-3</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-18T13:12:51.485913" elapsed="0.587468"/>
+<status status="PASS" start="2024-09-26T08:35:59.209686" elapsed="0.444964"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-09-18T13:12:52.098819" level="INFO">Current page contains text 'E-mail ou senha incorretos! Por favor, tente novamente.'.</msg>
+<msg time="2024-09-26T08:35:59.668564" level="INFO">Current page contains text 'E-mail ou senha incorretos! Por favor, tente novamente.'.</msg>
 <arg>E-mail ou senha incorretos! Por favor, tente novamente.</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-09-18T13:12:52.073381" elapsed="0.025438"/>
+<status status="PASS" start="2024-09-26T08:35:59.655647" elapsed="0.012917"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-18T13:12:52.098819" elapsed="2.130598"/>
+<status status="PASS" start="2024-09-26T08:35:59.668564" elapsed="2.095300"/>
 </kw>
-<status status="PASS" start="2024-09-18T13:12:49.039300" elapsed="5.191116"/>
+<status status="PASS" start="2024-09-26T08:35:57.095653" elapsed="4.668211"/>
 </test>
-<status status="PASS" start="2024-09-18T13:12:40.598315" elapsed="13.634105"/>
+<status status="PASS" start="2024-09-26T08:35:50.842026" elapsed="10.921838"/>
 </suite>
 <statistics>
 <total>
@@ -94,5 +96,7 @@
 </suite>
 </statistics>
 <errors>
+<msg time="2024-09-26T08:35:51.975794" level="WARN">The chromedriver version (128.0.6613.137) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.70); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-09-26T08:35:57.367162" level="WARN">The chromedriver version (128.0.6613.137) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.70); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>
